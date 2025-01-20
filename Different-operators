@@ -1,0 +1,64 @@
+# Different-operators-
+coding:
+import java.util.Scanner;
+
+public class OperatorExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the first number: ");
+        int num1 = scanner.nextInt();
+        System.out.print("Enter the second number: ");
+        int num2 = scanner.nextInt();
+System.out.println("\nArithmetic Operators:");
+        System.out.println("Addition: " + (num1 + num2));
+   System.out.println("Subtraction: " + (num1 - num2));
+  System.out.println("Multiplication: " + (num1 * num2));
+        System.out.println("Division: " + (num1 / num2));
+        System.out.println("Modulus: " + (num1 % num2));
+  System.out.println("\nRelational Operators:");
+        System.out.println("Is num1 equal to num2? " + (num1 == num2));
+        System.out.println("Is num1 not equal to num2? " + (num1 != num2));
+        System.out.println("Is num1 greater than num2? " + (num1 > num2));
+        System.out.println("Is num1 less than num2? " + (num1 < num2));
+        System.out.println("\nLogical Operators:");
+        boolean condition1 = num1 > 0;
+        boolean condition2 = num2 > 0;
+        System.out.println("Both numbers are positive: " + (condition1 && condition2));
+        System.out.println("At least one number is positive: " + (condition1 || condition2));
+        System.out.println("Neither number is positive: " + !(condition1 || condition2)); System.out.println("\nAssignment Operators:");
+        int num3 = num1;
+        num3 += num2; 
+        System.out.println("After num3 += num2, num3 = " + num3);
+        num3 -= num2; 
+        System.out.println("After num3 -= num2, num3 = " + num3);
+        num3 *= num2; 
+        System.out.println("After num3 *= num2, num3 = " + num3);
+        scanner.close();
+    }
+}
+
+output:
+Enter the first number: 10
+Enter the second number: 5
+Arithmetic Operators:
+Addition: 15
+Subtraction: 5
+Multiplication: 50
+Division: 2
+Modulus: 0
+
+Relational Operators:
+Is num1 equal to num2? false
+Is num1 not equal to num2? true
+Is num1 greater than num2? true
+Is num1 less than num2? false
+
+Logical Operators:
+Both numbers are positive: true
+At least one number is positive: true
+Neither number is positive: false
+
+Assignment Operators:
+After num3 += num2, num3 = 15
+After num3 -= num2, num3 = 10
+After num3 *= num2, num3 = 50
